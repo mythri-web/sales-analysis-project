@@ -1,38 +1,39 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Load dataset
 df = pd.read_csv("SampleSuperstore.csv")
 
 # Show first 5 rows
 print(df.head())
+
 # Check missing values
 print(df.isnull().sum())
 
-# Drop missing values
+# Data cleaning
 df = df.dropna()
-
-# Remove duplicates
 df = df.drop_duplicates()
 
 print("Cleaned data shape:", df.shape)
-# Total sales
-print("Total Sales:", df['Sales'].sum())
 
-# Average sales
+# Basic analysis
+print("Total Sales:", df['Sales'].sum())
 print("Average Sales:", df['Sales'].mean())
 
-# Sales by category
 print(df.groupby('Category')['Sales'].sum())
-import matplotlib.pyplot as plt
 
+# -------------------------
 # Sales by Category
+# -------------------------
 df.groupby('Category')['Sales'].sum().plot(kind='bar')
 
 plt.title("Sales by Category")
 plt.xlabel("Category")
 plt.ylabel("Sales")
+
+plt.savefig("sales_by_category.png")   # ✅ added
 plt.show()
-# -------------------------
+
 # -------------------------
 # Profit by Category
 # -------------------------
@@ -46,9 +47,12 @@ profit_category.plot(kind='bar')
 plt.title("Profit by Category")
 plt.xlabel("Category")
 plt.ylabel("Profit")
+
+plt.savefig("profit_by_category.png")   # ✅ added
 plt.show()
+
 # -------------------------
-# Top 10 Products
+# Top 10 Sub-Categories
 # -------------------------
 top_products = df.groupby('Sub-Category')['Sales'].sum().sort_values(ascending=False).head(10)
 
@@ -61,7 +65,10 @@ plt.title("Top 10 Sub-Categories by Sales")
 plt.xlabel("Sub-Category")
 plt.ylabel("Sales")
 plt.xticks(rotation=45)
+
+plt.savefig("top_subcategories.png")   # ✅ added
 plt.show()
+
 # -------------------------
 # Loss Making Sub-Categories
 # -------------------------
@@ -74,7 +81,10 @@ loss_products.plot(kind='barh')
 
 plt.title("Loss Making Sub-Categories")
 plt.xlabel("Profit")
+
+plt.savefig("loss_subcategories.png")   # ✅ added
 plt.show()
+
 # -------------------------
 # Sales by Region
 # -------------------------
@@ -88,7 +98,13 @@ region_sales.plot(kind='bar')
 plt.title("Sales by Region")
 plt.xlabel("Region")
 plt.ylabel("Sales")
+
+plt.savefig("sales_by_region.png")   # ✅ added
 plt.show()
+
+# -------------------------
+# Insights
+# -------------------------
 print("\n--- KEY INSIGHTS ---")
 print("1. Identify which category has highest sales and profit")
 print("2. Check sub-categories with losses")
