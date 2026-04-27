@@ -1,21 +1,33 @@
-# Sales Analysis Project
+# 🛒 Sales Analysis Project
 
-## Objective
-Analyze retail sales data to find insights and trends.
+## 📌 Objective
+To analyze retail sales data and extract meaningful business insights.
 
-## Tools Used
+## 🛠 Tools Used
 - Python
 - Pandas
 - Matplotlib
 
-## Key Insights
-- Technology category has highest sales
-- Some sub-categories are generating losses
-- Sales vary across regions
+## 📊 Dataset
+Sample Superstore dataset containing sales, profit, and regional data.
 
-## Files
-- analysis.py → Python analysis code
-- SampleSuperstore.csv → Dataset
+## 🔍 Analysis Performed
+- Data cleaning (removed null values & duplicates)
+- Sales analysis by category
+- Profit analysis by category
+- Top-performing sub-categories
+- Loss-making sub-categories
+- Sales distribution by region
 
-## Conclusion
-This project helps understand sales performance and business insights using data analysis.
+## 📈 Key Insights
+- Technology category generates highest sales
+- Some sub-categories are generating losses despite good sales
+- Regional performance varies significantly
+- Identified top and underperforming product segments
+
+## 📂 Project Files
+- `analysis.py` → Python code
+- `SampleSuperstore.csv` → Dataset
+
+## ✅ Conclusion
+This project demonstrates how data analysis can help businesses identify profitable areas and improve decision-making.
