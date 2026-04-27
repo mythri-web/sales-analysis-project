@@ -26,6 +26,7 @@ Sample Superstore dataset containing sales, profit, and regional data.
 - Identified top and underperforming product segments
 
 ## 📊 Visualizations
+## 📊 Visualizations
 
 ### Sales by Category
 ![Sales](sales_by_category.png)
@@ -41,6 +42,7 @@ Sample Superstore dataset containing sales, profit, and regional data.
 
 ### Sales by Region
 ![Region](sales_by_region.png)
+
 
 ## 📂 Project Files
 - `analysis.py` → Python code  
