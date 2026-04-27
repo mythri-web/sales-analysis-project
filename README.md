@@ -25,9 +25,26 @@ Sample Superstore dataset containing sales, profit, and regional data.
 - Regional performance varies significantly
 - Identified top and underperforming product segments
 
+## 📊 Visualizations
+
+### Sales by Category
+![Sales](sales_by_category.png)
+
+### Profit by Category
+![Profit](profit_by_category.png)
+
+### Top Sub-Categories
+![Top](top_subcategories.png)
+
+### Loss Making Sub-Categories
+![Loss](loss_subcategories.png)
+
+### Sales by Region
+![Region](sales_by_region.png)
+
 ## 📂 Project Files
-- `analysis.py` → Python code
-- `SampleSuperstore.csv` → Dataset
+- `analysis.py` → Python code  
+- `SampleSuperstore.csv` → Dataset  
 
 ## ✅ Conclusion
 This project demonstrates how data analysis can help businesses identify profitable areas and improve decision-making.
