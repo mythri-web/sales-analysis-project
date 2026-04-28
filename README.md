@@ -25,7 +25,7 @@ Sample Superstore dataset containing sales, profit, and regional data.
 - Regional performance varies significantly
 - Identified top and underperforming product segments
 
-## 📊 Visualizations
+
 ## 📊 Visualizations
 
 ### Sales by Category
